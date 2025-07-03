@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/flashcard_container"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        android:elevation="4dp"
+        android:background="@drawable/flashcard_bg">
+
+        <TextView
+            android:id="@+id/text_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Word"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text_definition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Definition"
+            android:textColor="@color/secondary"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+</FrameLayout>
